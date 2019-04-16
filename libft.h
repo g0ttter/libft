@@ -25,8 +25,7 @@ char	ft_tolower(char c);
 char	*ft_strncpy(char *dest, char *src, size_t count);
 int	ft_strcmp(char *s1, char *s2);
 char	*ft_strdup(char *src);
-int		ft_strlen(char *str);
-char	*strcpy(char *dest, char *src);
+char	*ft_strcpy(char *dest, char *src);
 
 #endif
 

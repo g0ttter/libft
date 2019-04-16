@@ -12,8 +12,9 @@
 
 #include <string.h>
 #include "libft.h"
+#include <stdio.h>
 
-int		ft_strlen(const char *str)
+int		ft_strlen_const(const char *str)
 {
 	int count;
 
@@ -23,20 +24,23 @@ int		ft_strlen(const char *str)
 	return (count);
 }
 
-char	*ft_strstr(const char str, const char *substr)
+char	*ft_strstr(const char *str, const char *substr)
 {
 	int i;
 	int b;
 
 	if (*substr == '\0')
 		return ((char*)str);
-	b = ft_strlen(substr);
+	b = ft_strlen_const(substr);
 	while (*str)
 	{
 		i = 0;
-		while (*str++ == substr[i++])
+		while (str == substr[i++])
+		{
 			if (i == b)
-				return ((char *)str - i);
+				return (str - i);
+			str++;
+		}
 		str++;
 	}
 	return (NULL);

@@ -6,11 +6,13 @@
 /*   By: lvelimir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 16:43:35 by lvelimir          #+#    #+#             */
-/*   Updated: 2019/04/09 16:45:51 by lvelimir         ###   ########.fr       */
+/*   Updated: 2019/04/11 18:25:44 by lvelimir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char ft_toupper(char c)
+#include "libft.h"
+
+char	ft_toupper(char c)
 {
 	if (c > 96 && c < 123)
 		return (c - 32);
