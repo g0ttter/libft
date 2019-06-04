@@ -36,7 +36,7 @@ char				*ft_strcat(char *dest, const char *src);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 char				*ft_strncpy(char *dst, const char *src, size_t len);
-int					ft_strcmp(char *s1, char *s2);
+int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strdup(char *src);
 char				*ft_strcpy(char *dest, char *src);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);

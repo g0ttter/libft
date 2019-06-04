@@ -30,6 +30,8 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	{
 		current = f(lst);
 		new->next = ft_lstnew(current->content, current->content_size);
+		if (new->next == NULL)
+			return (NULL);
 		lst = lst->next;
 		new = new->next;
 	}

@@ -46,7 +46,7 @@ char		**ft_strsplit(char const *s, char c)
 
 	if (s == NULL)
 		return (NULL);
-	if (!(result = (char **)malloc(sizeof(char **) * ft_wc(s, c) + 1)))
+	if (!(result = (char **)malloc(sizeof(char *) * ft_wc(s, c) + 1)))
 		return (NULL);
 	result = ft_do_the_thing(result, s, c);
 	return (result);

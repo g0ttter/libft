@@ -14,9 +14,9 @@
 
 char	*ft_strstr(const char *str, const char *substr)
 {
-	int i;
-	int b;
-	int i2;
+	size_t i;
+	size_t b;
+	size_t i2;
 
 	i2 = 0;
 	if (*substr == '\0')
